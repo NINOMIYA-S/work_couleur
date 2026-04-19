@@ -23,24 +23,24 @@ h1 {
 }
 
 h2 {
-  margin: 30px 0 17px;
+  margin: 3vw auto 1vw;
   text-align: center;
-  letter-spacing: 4px;
-  font-size: 30px;
+  letter-spacing: 3px;
+  font-size: 2em;
   color: #13BACC;
 }
 
 h4 {
   letter-spacing: 1.5px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: #F06E44;
   margin: 0;
   text-align: left;
 }
 
-header {
+header, footer {
   width: 100%;
-  height: 300px;
+  height: 15vw;
   background-color: #28abae;
 }
 
@@ -86,34 +86,47 @@ header {
   transform: translateY(20%) rotate(-45deg);
 }
 
+.title {
+  height: auto;
+}
+
 .title .image {
   z-index: 1;
   margin: 0 auto;
-  border-radius: 4%;
-  width: 700px;
-  height: 470px;
+  border-radius: 20px;
+  width: 25%;
+  height: 25vh;
   background-color: #F9F6F6;
   position: relative;
-  bottom: 200px;
-  margin-bottom: -200px;
+  bottom: 10vw;
+  margin-bottom: -8vh;
 }
+
 .title .image img {
   position: absolute;
   width: 95%;
-  left: 20px;
-  top: 35px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5% auto;
 }
+
 .title .link {
   z-index: 2;
 }
+
 .title h2 {
   font-size: 40px;
 }
+
 .title p {
+  font-size: 1.1em;
   color: #2F3F46;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   text-align: center;
 }
+
 .title p a {
   text-decoration: none;
 }
@@ -122,12 +135,13 @@ header {
   margin-bottom: 100px;
 }
 .overview ol {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-flow: column;
-  margin: 55px auto 30px;
+  margin: 30px auto;
   padding: 0;
 }
+
 .overview li {
   display: flex;
   justify-content: flex-start;
@@ -148,14 +162,115 @@ header {
   margin: 0;
 }
 
-footer {
-  width: 100%;
-  height: 300px;
-  background-color: #28abae;
-}
+
 footer .copyright {
-  padding-top: 200px;
+  padding-top: 6vw;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.8em;
   color: white;
 }/*# sourceMappingURL=work_couleur.css.map */
+
+@media (max-width: 1024px) {
+
+header, footer {
+  height: 20vh;
+}
+
+.title .image {
+  z-index: 1;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 30%;
+  height: 20vh;
+  background-color: #F9F6F6;
+  position: relative;
+  bottom: 12vh;
+  margin-bottom: -7vh;
+}
+
+.overview ol {
+  width: 80%;
+}
+
+footer .copyright {
+  padding-top: 10vh;
+  margin: 0;
+}
+
+}
+
+@media (max-width: 768px) {
+  .overview ol {
+    width: 85%;
+  }
+
+  h2 {
+    letter-spacing: 2px;
+    font-size: 1.8em;
+  }
+
+  h4 {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+
+  .title p {
+    font-size: 1em;
+  }
+
+  .overview li {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 7vw;
+  }
+
+  .overview li div {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .overview li div p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 430px) {
+.title .image {
+  width: 50%;
+}
+
+header, footer {
+  height: 15vh;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.title .image {
+  bottom: 8vh;
+  margin-bottom: -9vh;
+}
+
+.title p {
+  font-size: 0.7em;
+}
+
+.overview ol {
+  width: 90%;
+}
+
+.overview li {
+  margin-bottom: 10vw;
+}
+
+.overview li div p {
+  font-size: 0.8em;
+}
+
+footer .copyright {
+  padding-top: 7vh;
+}
+}
